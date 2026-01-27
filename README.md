@@ -5,12 +5,12 @@ Built a reliable breast cancer classifier that prioritizes high recall (minimizi
 
 # Dataset
 
-- Source File : https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
+- Source file : https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
 
-# Leakage Prevention 
-- I Kept a strict train/test split. The test set is held out until the very end.
+# Leakage prevention 
+- I kept a strict train/test split. The test set is held out until the very end.
 - Selected the decision threshold using out-of-fold (OOF) predictions from cross-validation on the training portion only (so the threshold isn’t tuned on the test set).
-- Wrapped preprocessing (imputation and scaling) and the model in a single scikit-learn Pipeline, so preprocessing is fit only on training folds and applied to validation folds without leaking information.
+- Wrapped preprocessing (imputation and scaling) and the model in a single scikit-learnp Pipeline, so preprocessing is fit only on training folds and applied to validation folds without leaking information.
 - Reported final performance using the held-out test set to estimate generalization.
 
 # Approach
@@ -91,7 +91,7 @@ Top 10 coefficients (by absolute value)
 # How to Run
 
 1. Install dependencies pip install -r requirements.txt
-2. Download dataset Download data.csv from Kaggle and place it in the project root.
+2. Download dataset: data.csv from Kaggle and place it in the project root.
 3. Run the notebook jupyter notebook breast_cancer_selective_classifier.ipynb
 
 # Future work
