@@ -75,7 +75,7 @@ Top 10 coefficients (by absolute value)
 - Top 10 features
 - Calibration curve
 - Coverage vs Auto Accuracy (test set sweep)
-- Coverage vs Miss Rate (auto-only)** (test set sweep)
+- Coverage vs Miss Rate 
 
 # Limitations
 
