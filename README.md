@@ -11,9 +11,9 @@ Built a reliable breast cancer classifier that prioritizes high recall (minimizi
 
 # Models
 
-- Baseline model:** Logistic Regression (L2-regularized)
+- Baseline model: Logistic Regression (L2-regularized)
 - Pipeline:
-  - 'SimpleImputer(strategy="median")`
+  - `SimpleImputer(strategy="median")`
   - `StandardScaler()`
   - `LogisticRegression(solver="liblinear", C=0.2, max_iter=3000)`
 
