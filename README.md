@@ -7,6 +7,12 @@ Built a reliable breast cancer classifier that prioritizes high recall (minimizi
 
 - Source File : https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
 
+# Leakage Prevention 
+- I Kept a strict train/test split. The test set is held out until the very end.
+- Selected the decision threshold using out-of-fold (OOF) predictions from cross-validation on the training portion only (so the threshold isn’t tuned on the test set).
+- Wrapped preprocessing (imputation and scaling) and the model in a single scikit-learn Pipeline, so preprocessing is fit only on training folds and applied to validation folds without leaking information.
+- Reported final performance using the held-out test set to estimate generalization.
+
 # Approach
 
 # Models
