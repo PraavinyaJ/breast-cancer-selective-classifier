@@ -1,4 +1,5 @@
-# Breast Cancer Selective Classifier (Logistic Regression)
+# Breast Cancer Selective Classifier (Logistic Regression)- Selective prediction model that defers uncertain cases to clinicians to reduce missed malignancies.
+
 
 # Problem Statement
 Built a reliable breast cancer classifier that prioritizes high recall (minimizing missed malignant cases) and supports a selective prediction / referral workflow. The model predicts when confident and defers to human review when uncertain.
