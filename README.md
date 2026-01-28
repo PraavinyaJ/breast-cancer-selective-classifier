@@ -8,6 +8,10 @@ Built a reliable breast cancer classifier that prioritizes high recall (minimizi
 
 - Source file : https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
 
+# Clinical Importance
+- In breast cancer screening and diagnostic workflows, the cost of a false negative is higher than the cost of a false positive. A missed malignancy can delay treatment and worsen outcomes, while false positives generally lead to additional imaging or biopsy. Because of this asymmetry, models optimized for overall accuracy can be unsafe in practice. Clinical decision support tools should instead prioritize high sensitivity, produce reliable risk estimates, and handle uncertainty explicitly rather than forcing a prediction on every case.
+- This project reframes breast cancer classification as a risk triage problem: the goal is not just to predict, but to support safe clinical workflows.
+
 # Leakage prevention 
 - I kept a strict train/test split. The test set is held out until the very end.
 - Selected the decision threshold using out-of-fold (OOF) predictions from cross-validation on the training portion only (so the threshold isn’t tuned on the test set).
@@ -76,6 +80,7 @@ Top 10 coefficients (by absolute value)
 | concave points_worst | 0.502319 | 0.502319 |
 | texture_mean | 0.483583 | 0.483583 |
 
+# Takeaways:
 
 # Visuals
 
